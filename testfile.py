@@ -1,5 +1,4 @@
-import MP2OSM
-__author__ = 'Krzysztof'
+import MPParser
 
-parser = MP2OSM.MP2OSM("wynik.mp")
+parser = MPParser.Parser("/home/kkrawczyk/SoftwareSource/ump/tmp/wynik.mp")
 parser.parse()

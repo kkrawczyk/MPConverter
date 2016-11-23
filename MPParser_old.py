@@ -1,6 +1,6 @@
 __author__ = 'Krzysztof Krawczyk <k.krawczyk@nova-it.eu>'
 
-class MPParser:
+class Parser:
     """Class to parse and process MP files"""
     def __init__(self,mpfilename):
         self.mpfilename = mpfilename

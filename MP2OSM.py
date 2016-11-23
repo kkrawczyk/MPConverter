@@ -1,10 +1,10 @@
-import MPParser
+import MPParser_old
 
 __author__ = 'Krzysztof Krawczyk'
 
-class MP2OSM(MPParser.MPParser):
+class MP2OSM(MPParser_old.MPParser):
     def __init__(self,mpfilename):
-        MPParser.MPParser.__init__(self,mpfilename)
+        MPParser_old.MPParser.__init__(self, mpfilename)
         self.ignoredKeys = []
 
     def processNodes(self,nodes_str,typename):
