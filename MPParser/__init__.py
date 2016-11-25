@@ -1,3 +1,2 @@
-__all__ = ['Parser','Section']
+__all__ = ['Parser','Sections']
 from Parser import Parser
-from Section import Section
