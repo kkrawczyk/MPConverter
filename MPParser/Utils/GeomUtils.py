@@ -11,18 +11,26 @@ class GeomUtils(object):
     @staticmethod
     def createPointFromString(text):
         t = make_tuple(text)
-        return Point(t[0], t[1])
+        return Point(t[1], t[0])
 
     @staticmethod
     def createPolylineFromString(data):
         if not data.startswith('['):
             data = '['+data+']'
         t = eval(data)
-        return LineString(t)
+        t2 = []
+        for p in t:
+            p2 = [p[1], p[0]]
+            t2.append(p2)
+        return LineString(t2)
 
     @staticmethod
     def createPolygonFromString(data):
         if not data.startswith('['):
             data = '['+data+']'
         t = eval(data)
-        return Polygon(t)
+        t2 = []
+        for p in t:
+            p2 = [p[1], p[0]]
+            t2.append(p2)
+        return Polygon(t2)
